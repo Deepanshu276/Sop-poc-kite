@@ -13,7 +13,7 @@ import (
 func main() {
 	// Replace with your GitHub username, repository, and file path
 
-	url := "https://github.com/openshift/ops-sop/blob/master/v4/alerts/ClusterOperatorDown.md"
+	url := ""
 
 	// Extract username, repo name, and path from the URL
 	parts := strings.Split(strings.TrimPrefix(url, "https://github.com/"), "/")
@@ -38,7 +38,7 @@ func main() {
 	req.Header.Set("Accept", "application/vnd.github.v3.raw")
 
 	// Replace with your GitHub personal access token
-	token := "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"
+	token := ""
 	if token != "" {
 		// Set the Authorization header to authenticate the request
 		req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", token))
